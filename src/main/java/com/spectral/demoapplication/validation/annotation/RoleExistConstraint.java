@@ -1,6 +1,5 @@
 package com.spectral.demoapplication.validation.annotation;
 
-import com.spectral.demoapplication.validation.validator.ExistEmailValidator;
 import com.spectral.demoapplication.validation.validator.RoleExistValidator;
 
 import javax.validation.Constraint;

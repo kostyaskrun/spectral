@@ -135,7 +135,6 @@ public class UserControllerTest {
 
     @Test
     public void getUsersWithoutFilter() throws Exception {
-        //get without
         MockHttpServletResponse response = mockMvc.perform(get("/users"))
                 .andReturn().getResponse();
         assertEquals(200, response.getStatus());

@@ -23,13 +23,13 @@ public class CountryExistValidator implements ConstraintValidator<CountryExistCo
     }
 
     /**
-     * @param email specific user
+     * @param countryName specific country name
      * @param constraintValidatorContext - constraint context
-     * @return true if email isn't present, that means, that we can create new user using this email
+     * @return true if country present, that means, that we can create new user using this country name
      */
     @Override
-    public boolean isValid(String email, ConstraintValidatorContext constraintValidatorContext) {
-        boolean isValid = nonNull(service.getByName(email));
+    public boolean isValid(String countryName, ConstraintValidatorContext constraintValidatorContext) {
+        boolean isValid = nonNull(service.getByName(countryName));
 
         if (isValid) {
             constraintValidatorContext.buildConstraintViolationWithTemplate(message)

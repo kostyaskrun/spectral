@@ -23,9 +23,9 @@ public class RoleExistValidator implements ConstraintValidator<EmailExistConstra
     }
 
     /**
-     * @param names specific user
+     * @param names list of role names
      * @param constraintValidatorContext - constraint context
-     * @return true if email isn't present, that means, that we can create new user using this email
+     * @return true if roles for particular role names is present.
      */
     @Override
     public boolean isValid(List<String> names, ConstraintValidatorContext constraintValidatorContext) {

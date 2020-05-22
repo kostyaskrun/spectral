@@ -6,10 +6,6 @@ import com.spectral.demoapplication.validation.annotation.EmailExistConstraint;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-/**
- * Represents validator for {@link EmailExistConstraint} implements {@link ConstraintValidator}
- *
- */
 public class ExistEmailValidator implements ConstraintValidator<EmailExistConstraint, String> {
 
     private String message;

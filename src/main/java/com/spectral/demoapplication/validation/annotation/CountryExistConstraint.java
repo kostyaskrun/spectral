@@ -12,7 +12,7 @@ import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * Represents validate for existing e-mail in data base
+ * Represents validate for existing country in data base
  *
  */
 @Target({FIELD})
